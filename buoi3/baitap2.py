@@ -19,7 +19,8 @@ print(json.dumps(album, indent=4))
 name_release = album.values()
 print(f'ten album va ngay ra mat: {name_release}')
 # cách 2
-
+value = album['album_name']
+print(value)
 
 # thay đổi giá trị của key release_year từ 1971 thành 1973
 album['release_year'] = '1973'
