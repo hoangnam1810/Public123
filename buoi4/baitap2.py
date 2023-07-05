@@ -6,7 +6,7 @@ month = int(input('nhap thang '))
 
 lst1 = [1, 3, 5, 7, 8, 10, 12]
 lst2 = [4, 6, 9, 11]
-if month in lst1:
+if month == lst1:
     print('co 31 ngay')
 elif month == 2:
     year = int(input('nhap nam'))
