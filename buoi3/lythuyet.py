@@ -16,8 +16,10 @@ total = tup + tup2
 print(total.index('e'))
 
 # set
+set = {1,2,3,4,5}
 set = set()
 print(set)
+
 
 # set: chỉ chứa các phần tử không trùng lặp với nhau
 # add() thêm phần tử vào set

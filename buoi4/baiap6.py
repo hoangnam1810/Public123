@@ -1,6 +1,13 @@
-n = int(input("nhap so can tinh giai thua: "))
+x = int(input('nhap x: '))
+n = int(input('nhap n: '))
 
-s = 1
+tong = 0
+
 for i in range(1, n+1):
-    s = s* i
-print(f'giai thua la {s}')
+    tu = x**i
+    mau = 1
+    for j in range(1, i+1):
+        mau *= j
+    tong += (tu/mau)
+
+print(tong)
