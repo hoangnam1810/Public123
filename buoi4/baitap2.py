@@ -6,11 +6,11 @@ month = int(input('nhap thang '))
 
 lst1 = [1, 3, 5, 7, 8, 10, 12]
 lst2 = [4, 6, 9, 11]
-if month == lst1:
+if month in lst1:
     print('co 31 ngay')
 elif month == 2:
     year = int(input('nhap nam'))
-    if year % 4 == 0:
+    if (year % 4 == 0 and year %100 !=0) or (year %400 == 0):
         print('nam nhuan co 29 ngay')
     else:
         print('nam thuong co 28 ngay')

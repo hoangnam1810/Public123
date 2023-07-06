@@ -5,7 +5,7 @@ biết rằng năm nhuận là năm chia hết cho 4 nhưng không chia hết ch
 
 year = int(input('nhap nam: '))
 
-if year % 4 == 0:
+if (year % 4 == 0 and year %100 !=0) or (year %400 == 0):
     print('nam nhuan')
 else:
     print('nam thuong')
