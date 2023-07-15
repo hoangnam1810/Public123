@@ -1,5 +1,10 @@
-# số chia hết cho 2
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# số chia hết cho 2 compre
+num = int(input('nhap n'))
 
-ketqua = [x for x in numbers if x % 2 == 0]
-print(ketqua)
+print('chia het') if num % 2 == 0  else print('khong chia het')
+
+# normal
+if num % 2 == 0:
+    print('chia het')
+else:
+    print('khong het')

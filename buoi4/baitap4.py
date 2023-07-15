@@ -2,7 +2,7 @@
 while True:
     n = int(input('nhap 1 so'))
     dem = 1
-    for i in range(1, n+1):
+    for i in range(2, n+1):
         if n % i ==0:
             dem += 1
     if dem == 2:
