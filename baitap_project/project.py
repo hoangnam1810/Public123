@@ -31,9 +31,11 @@ def add_movie():
     movies[name] = movie
     print('da them phim')
 
+len_movies = len(movies)
+
 # hiển thị bộ phim
 def display_movies():
-    if len(movies) == 0:
+    if len_movies == 0:
         print('khong co phim')
     else:
         for name, movie in movies.items():
@@ -42,7 +44,7 @@ def display_movies():
             print(f'Năm sản xuất: {movie["release_year"]}')
 # kiếm phim
 def search_movies():
-    if len(movies) == 0:
+    if len_movies == 0:
         print('khong co phim')
     else:
         tu_khoa = input('nhap tu khoa tim kiem: ')
@@ -54,7 +56,7 @@ def search_movies():
 
 # sửa thông tin
 def update_movie():
-    if len(movies) == 0:
+    if len_movies == 0:
         print('khong co phim')
     else:
         name = input('nhap ten phim muon thay the: ')
@@ -76,7 +78,7 @@ def update_movie():
 
 # xóa
 def delete_movie():
-    if len(movies) == 0:
+    if len_movies == 0:
         print('khong co phim')
     else:
         name = input('nhap tu khoa phim muon xoa:  ')
